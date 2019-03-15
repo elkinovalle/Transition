@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin: 0px;
+    margin: 0px;
+}
+nav{
+    background-color: brown;
+    text-align: center;
+    height: 70px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 25px 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+  }
+a:hover{
+    background-color: rgb(8, 42, 58);
+    height: 15px;
+    border-bottom: solid 5px rgb(77, 199, 179);
+    transition-duration: .5s;
+}
+.active{
+    background-color: rgb(8, 42, 58);
+    height: 15px;
+    border-bottom: solid 5px rgb(77, 199, 179);
+}
+/* Index */
+section{
+ background-color: blue;
+ position: absolute;
+ width: 200px;
+ height: 200px;
+ margin: auto;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0px;
+ transition-duration: 2s;
+
+ 
+}
+section:hover{
+background-color: green;
+width: 300px; 
+height: 300px;
+
+}
+/* pagina 2 */
+article{
+    background-color: green;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    margin: auto;
+    transition-property: width,height,background-color, border;
+    transition-duration: 1.5s;
+    transition-delay: 0s,1.5s,1.5s,3s;
+
+}
+article:hover{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(153, 153, 13);
+    border: solid 10px rgb(138, 19, 19);
+}
+/* Pagina 3 */
+
+footer{
+    background-color:darkred;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    margin: auto;
+    transition-property: all,background-color;
+    transition-duration: 1.5s;
+    transition-delay: 0s,1.5s; 
+}
+footer h1{
+    background-color: rgb(0, 183, 255);
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    margin: auto; 
+    transition-property: width,height,background-color,border-radius;
+    transition-duration: 1.5s;
+    transition-delay: 1.5s,1.5s,3s,3s; 
+}
+footer:hover{
+    background-color: rgb(9, 78, 20);
+    width: 300px;
+    height: 300px;  
+}
+footer:hover h1{
+    background-color: rgb(252, 206, 55);
+    width: 180px;
+    height: 180px; 
+    border-radius: 50%;
+}
+
+/* Pagina 4 */
+aside{
+    background-color:rgb(51, 2, 31);
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    margin: auto;
+    transition-property:width,height, background-color;
+    transition-duration: 1s;
+    transition-delay: 0s,1s,2s; 
+}
+
+aside h2:first-child{
+    background-color:rgb(77, 199, 179);
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0; 
+    left: 0px;
+    transition-property: margin-left,border-radius, background-color;
+    transition-duration: 1s;
+    transition-delay: 3s,4s,4s; 
+}
+aside h2:last-child{
+    background-color:rgb(77, 199, 179);
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 0; 
+    right: 0px;
+    transition-property: margin-right, border-radius, background-color;
+    transition-duration: 1s;
+    transition-delay: 3s,4s,4s; 
+}
+aside:hover{
+    width: 350px;
+    height: 350px;
+    background-color:rgb(158, 43, 112);
+}
+aside:hover h2:first-child{
+    margin-left: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+aside:hover h2:last-child{
+    margin-right: 50px;
+    border-radius: 50%;
+    background-color:red;
+}
+/* Pagina 5 */
+main{
+    background-color: rgb(204, 103, 8);
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    margin: auto;
+    transition-property: background-color,width,height;
+    transition-duration: 1s;
+    transition-delay: 0s,1s,2s;
+}
+main h3:nth-of-type(1){
+    background-color:yellow;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0; 
+    right: 0px;
+    transition-property: margin-top,margin-right,border-radius;
+    transition-duration: 1s;
+    transition-delay: 3s,3s,4s;  
+}
+main h3:nth-of-type(2){
+    background-color:yellow;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0; 
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+    transition-property:border-radius, background-color;
+    transition-duration: 1s;
+    transition-delay: 5s,6s;  
+}
+main h3:nth-of-type(3){
+    background-color:yellow;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0; 
+    left: 0px;
+    transition-property: margin-left,margin-bottom,border-radius ;
+    transition-duration: 1s;
+    transition-delay: 3s,3s,4s;  
+}
+main:hover{
+    background-color:rgb(18, 75, 67);   
+    width: 350px;
+    height: 350px;
+}
+main:hover h3:nth-of-type(1){
+margin-top: 40px;
+margin-right: 40px;
+border-radius: 50%;
+}
+main:hover h3:nth-of-type(2){
+border-radius: 50%;
+background-color: rgb(128, 0, 128);
+}
+
+main:hover h3:nth-of-type(3){
+margin-bottom: 40px;
+margin-left: 40px;
+border-radius: 50%;
+}
+
+/* Pagina 6 */
+
+
+div{
+    background-color: rgb(35, 146, 180);
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    margin: auto;
+    transition-property: width,height,border-top,border-right,border-bottom,border-left;
+    transition-duration: 1s;
+    transition-delay: 0s,0s,1s,2s,3s,4s; 
+}
+div h6:nth-of-type(1){
+    background-color:rgb(34, 34, 7);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0; 
+    left: 0px;
+    transition-property: margin-top,margin-left,border-radius;
+    transition-duration: 1s;
+    transition-delay: 5s,5s,6s; 
+}
+div h6:nth-of-type(2){
+    background-color:rgb(34, 34, 7);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0; 
+    right: 0px;
+    transition-property: margin-top,margin-right,border-radius;
+    transition-duration: 1s;
+    transition-delay: 7s,7s,8s; 
+}
+div h6:nth-of-type(3){
+    background-color:rgb(34, 34, 7);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0; 
+    right: 0px;
+    bottom: 0px;
+    left:0px ;
+    margin: auto;
+    transition-property: border-radius,background-color;
+    transition-duration: 1s;
+    transition-delay: 13s,14s;
+}
+div h6:nth-of-type(4){
+    background-color:rgb(34, 34, 7);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0; 
+    left: 0px;
+    transition-property: margin-bottom,margin-left,border-radius;
+    transition-duration: 1s;
+    transition-delay: 9s,9s,10s;
+}
+div h6:nth-of-type(5){
+    background-color:rgb(34, 34, 7);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0; 
+    right: 0px;
+    transition-property: margin-bottom,margin-right,border-radius;
+    transition-duration: 1s;
+    transition-delay: 11s,11s,12s;
+}
+div:hover{
+    width:350px;
+    height: 350px; 
+    border-top: solid 10px rgb(211, 22, 22);
+    border-right: solid 10px rgb(34, 212, 159);
+    border-bottom: solid 10px rgb(196, 243, 25);
+    border-left: solid 10px rgb(132, 58, 201);
+}
+div:hover h6:nth-of-type(1){
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 50%;
+}
+div:hover h6:nth-of-type(2){
+    margin-top: 40px;
+    margin-right: 40px;
+    border-radius: 50%;
+}div:hover h6:nth-of-type(4){
+    margin-bottom: 40px;
+    margin-left: 40px;
+    border-radius: 50%;
+}
+div:hover h6:nth-of-type(5){
+    margin-bottom: 40px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+div:hover h6:nth-of-type(3){  
+    border-radius: 50%;
+    background-color: rgb(115, 204, 216);
+}
